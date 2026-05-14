@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>墨元 AI - 中文 AI 生图平台原型</title>
+    <title>墨元 AI - 可商用 AI 生图平台</title>
     <meta
       name="description"
-      content="墨元 AI 是面向中文用户、电商商家与内容团队的 AI 生图平台，支持模板生成、支付宝购买积分和商用图片工作流。"
+      content="墨元 AI 面向电商商家、内容团队和企业客户，提供中文 AI 生图、支付宝积分充值、发票和企业 API。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="notice-bar">
+      <span>新用户注册送 20 积分</span>
+      <span>支付宝付款 · 支持对公转账 · 可开电子发票</span>
+      <span>客服微信：13656670870</span>
+    </div>
+
     <header class="topbar">
       <a class="brand" href="#hero" aria-label="墨元 AI 首页">
         <span class="brand-mark">墨</span>
@@ -20,15 +26,15 @@
         </span>
       </a>
       <nav class="nav" aria-label="主导航">
-        <a href="#studio">生成图片</a>
-        <a href="#gallery">案例广场</a>
-        <a href="#pricing">价格</a>
-        <a href="#api">API</a>
-        <a href="#contact">联系</a>
+        <a href="#studio">在线生成</a>
+        <a href="#solutions">使用场景</a>
+        <a href="#gallery">案例模板</a>
+        <a href="#pricing">套餐价格</a>
+        <a href="#contact">联系客服</a>
       </nav>
       <div class="top-actions">
         <button class="ghost-button" type="button">登录</button>
-        <button class="solid-button" type="button">免费体验</button>
+        <button class="solid-button" type="button">立即试用</button>
       </div>
     </header>
 
@@ -36,125 +42,178 @@
       <section class="hero" id="hero">
         <div class="hero-copy">
           <p class="eyebrow">杭州特米诺偲人工智能科技有限公司</p>
-          <h1>墨元 AI</h1>
-          <p class="hero-lead">一句话生成可商用图片，适合电商主图、内容封面、海报、产品场景和品牌视觉探索。</p>
+          <h1>电商和内容团队都能用的 AI 生图平台</h1>
+          <p class="hero-lead">
+            输入中文需求，快速生成商品主图、详情图、小红书封面、活动海报和产品场景图。支持支付宝购买积分，企业客户可开票、可对公、可私有化部署。
+          </p>
           <div class="hero-actions">
-            <a class="solid-link" href="#studio">开始生成</a>
-            <a class="text-link" href="#gallery">查看案例</a>
+            <a class="solid-link" href="#studio">免费生成 5 张</a>
+            <a class="text-link" href="#pricing">查看套餐</a>
           </div>
-          <div class="trust-row" aria-label="产品能力">
-            <span>中文提示词优化</span>
-            <span>支付宝积分支付</span>
-            <span>企业 API</span>
+          <div class="trust-row" aria-label="商业保障">
+            <span>人民币结算</span>
+            <span>7×12 小时客服</span>
+            <span>图片历史保存</span>
+            <span>企业发票</span>
+          </div>
+          <div class="metrics-row" aria-label="运营数据示例">
+            <strong><b>3 分钟</b><span>出一组主图</span></strong>
+            <strong><b>20+</b><span>行业模板</span></strong>
+            <strong><b>¥0.15 起</b><span>单张成本可控</span></strong>
           </div>
         </div>
-        <div class="hero-board" aria-label="生成案例预览">
-          <article class="sample-card large">
+
+        <div class="commerce-card" aria-label="商业产品预览">
+          <div class="card-head">
+            <span>墨元 AI 工作台</span>
+            <em>余额 386 积分</em>
+          </div>
+          <div class="preview-main">
             <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=82"
-              alt="电商产品摄影风格手表图"
+              src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=82"
+              alt="护肤品商业摄影图"
             />
-            <span>电商主图</span>
-          </article>
-          <article class="sample-card">
+            <div class="order-ticket">
+              <span>订单状态</span>
+              <strong>已完成</strong>
+              <p>支付宝充值 ¥59 · 400 积分</p>
+            </div>
+          </div>
+          <div class="mini-results">
             <img
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=82"
-              alt="时尚人物封面图"
+              src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=320&q=82"
+              alt="美妆产品结果图"
             />
-            <span>内容封面</span>
-          </article>
-          <article class="sample-card">
             <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=82"
-              alt="自然场景海报图"
+              src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=320&q=82"
+              alt="香氛产品结果图"
             />
-            <span>品牌海报</span>
-          </article>
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=320&q=82"
+              alt="运动鞋产品结果图"
+            />
+          </div>
         </div>
       </section>
 
       <section class="section studio-section" id="studio">
         <div class="section-heading compact">
-          <p class="eyebrow">生成工作台</p>
-          <h2>第一屏就是工具，不让用户绕路</h2>
+          <p class="eyebrow">在线生成</p>
+          <h2>像下单一样生成图片，用户知道钱花在哪</h2>
         </div>
         <div class="studio-shell">
           <aside class="control-panel">
+            <div class="balance-box">
+              <span>当前账户</span>
+              <strong>386 积分</strong>
+              <button type="button">支付宝充值</button>
+            </div>
             <label class="field">
-              <span>描述画面</span>
+              <span>生成需求</span>
               <textarea>
 一款东方美学护肤品，白瓷瓶身，青绿色植物背景，柔和自然光，高级电商摄影，干净留白，适合天猫主图</textarea
               >
             </label>
             <div class="field-grid">
               <label class="field">
-                <span>场景</span>
+                <span>业务场景</span>
                 <select>
-                  <option>电商主图</option>
+                  <option>淘宝/天猫主图</option>
+                  <option>抖店商品图</option>
                   <option>小红书封面</option>
-                  <option>节日海报</option>
-                  <option>头像/IP</option>
+                  <option>朋友圈海报</option>
                 </select>
               </label>
               <label class="field">
-                <span>比例</span>
+                <span>图片比例</span>
                 <select>
-                  <option>1:1</option>
-                  <option>3:4</option>
-                  <option>4:5</option>
-                  <option>16:9</option>
+                  <option>1:1 商品主图</option>
+                  <option>3:4 详情展示</option>
+                  <option>4:5 小红书</option>
+                  <option>16:9 横版海报</option>
                 </select>
               </label>
             </div>
             <div class="style-pills" aria-label="风格选择">
               <button class="active" type="button">商业摄影</button>
-              <button type="button">国潮</button>
-              <button type="button">极简</button>
-              <button type="button">写实</button>
+              <button type="button">国潮质感</button>
+              <button type="button">白底图</button>
+              <button type="button">模特上身</button>
             </div>
-            <button class="generate-button" type="button">生成图片 · 4 积分</button>
+            <button class="generate-button" type="button">立即生成 · 4 积分</button>
+            <p class="microcopy">生成失败不扣积分，图片可在历史记录中重新下载。</p>
           </aside>
 
           <div class="result-panel">
             <div class="result-toolbar">
-              <span>本次生成结果</span>
+              <span>生成结果 · 可下载高清图</span>
               <div>
                 <button type="button">再次生成</button>
-                <button type="button">下载</button>
+                <button type="button">加入案例</button>
               </div>
             </div>
             <div class="result-grid">
               <article>
                 <img
-                  src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=700&q=82"
+                  src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=700&q=82"
                   alt="护肤品瓶身静物图"
                 />
               </article>
               <article>
                 <img
-                  src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=82"
+                  src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=82"
                   alt="化妆品套装图片"
                 />
               </article>
               <article>
                 <img
-                  src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=82"
-                  alt="美妆产品图"
+                  src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=700&q=82"
+                  alt="香氛产品图"
                 />
               </article>
               <article class="empty-result">
-                <span>+ 参考图改图</span>
+                <span>上传参考图改图</span>
               </article>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="section solutions-section" id="solutions">
+        <div class="section-heading">
+          <p class="eyebrow">使用场景</p>
+          <h2>先解决能成交的场景，再谈大平台</h2>
+          <p>面向中国市场，用户最关心的是省设计费、省拍摄费、能不能付款开票、客服找不找得到。</p>
+        </div>
+        <div class="solution-grid">
+          <article>
+            <span>01</span>
+            <h3>电商主图</h3>
+            <p>适合淘宝、天猫、抖店、拼多多商家，批量生成商品场景图、白底图和活动图。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>内容封面</h3>
+            <p>适合小红书、公众号、视频号和抖音运营，快速生成封面与配图。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>企业物料</h3>
+            <p>适合市场部生成节日海报、招商图、产品介绍图和销售素材。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>私有部署</h3>
+            <p>适合有数据安全要求的企业，支持专属模板、团队额度和内部审批流程。</p>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="gallery">
         <div class="section-heading">
-          <p class="eyebrow">案例广场</p>
-          <h2>让案例本身成为搜索流量</h2>
-          <p>每个案例都可以沉淀成模板页，承接“AI 电商主图生成器”“小红书封面生成器”等关键词。</p>
+          <p class="eyebrow">案例模板</p>
+          <h2>让客户先看到结果，再决定充值</h2>
+          <p>每个模板都可以配提示词、行业标签和一键套用按钮，既能转化用户，也能做搜索流量。</p>
         </div>
         <div class="gallery-grid">
           <article>
@@ -164,6 +223,7 @@
             />
             <h3>护肤品主图</h3>
             <p>高端白瓷瓶、植物背景、自然光</p>
+            <button type="button">套用模板</button>
           </article>
           <article>
             <img
@@ -172,6 +232,7 @@
             />
             <h3>香氛场景</h3>
             <p>木质桌面、生活方式、暖色调</p>
+            <button type="button">套用模板</button>
           </article>
           <article>
             <img
@@ -180,6 +241,7 @@
             />
             <h3>小红书封面</h3>
             <p>人物大片、干净标题区、强点击感</p>
+            <button type="button">套用模板</button>
           </article>
           <article>
             <img
@@ -188,73 +250,87 @@
             />
             <h3>潮流单品</h3>
             <p>运动鞋、强对比、年轻消费场景</p>
+            <button type="button">套用模板</button>
           </article>
         </div>
       </section>
 
       <section class="section split-section" id="pricing">
         <div class="section-heading left">
-          <p class="eyebrow">价格与支付</p>
-          <h2>用积分计费，用户更容易理解成本</h2>
-          <p>首版建议接入支付宝电脑网站支付和手机网站支付，付款成功后自动充值积分。</p>
+          <p class="eyebrow">套餐价格</p>
+          <h2>支付宝直接充值，企业客户可对公开票</h2>
+          <p>首版不要复杂订阅，先用积分包降低决策成本。用户用完再买，企业客户走销售和合同。</p>
+          <ul class="check-list">
+            <li>支持支付宝付款</li>
+            <li>支持电子普通发票</li>
+            <li>支持企业专属套餐</li>
+            <li>生成失败自动返还积分</li>
+          </ul>
         </div>
         <div class="pricing-grid">
           <article>
-            <span class="plan-name">体验</span>
-            <strong>免费</strong>
-            <p>注册送 20 积分，适合试用生成质量。</p>
-            <button type="button">立即试用</button>
-          </article>
-          <article class="featured-plan">
-            <span class="plan-name">创作包</span>
-            <strong>¥59</strong>
-            <p>400 积分，适合内容运营和小店日常出图。</p>
+            <span class="plan-name">体验包</span>
+            <strong>¥9.9</strong>
+            <p>60 积分，适合首次试用和单次活动出图。</p>
             <button type="button">支付宝购买</button>
           </article>
+          <article class="featured-plan">
+            <span class="badge">推荐</span>
+            <span class="plan-name">创作包</span>
+            <strong>¥59</strong>
+            <p>400 积分，适合内容运营、小店商家和日常营销。</p>
+            <button type="button">立即充值</button>
+          </article>
           <article>
-            <span class="plan-name">专业包</span>
-            <strong>¥199</strong>
-            <p>1800 积分，适合团队批量生成和模板测试。</p>
-            <button type="button">联系开通</button>
+            <span class="plan-name">企业包</span>
+            <strong>¥1999 起</strong>
+            <p>团队账号、专属模板、API 额度、合同与发票。</p>
+            <button type="button">联系销售</button>
           </article>
         </div>
       </section>
 
-      <section class="section api-section" id="api">
-        <div>
-          <p class="eyebrow">企业 API</p>
-          <h2>开源项目引流，官方服务卖省心</h2>
-          <p>
-            面向企业客户提供稳定托管、人民币结算、团队额度、模板管理和私有化部署。模型层保持可替换，业务层沉淀中文工作流。
-          </p>
+      <section class="section service-section">
+        <div class="service-item">
+          <strong>付款保障</strong>
+          <span>订单、充值、扣费全程记录，支持后台查询。</span>
         </div>
-        <div class="api-card">
-          <code>POST /v1/images/generations</code>
-          <span>统一图像生成接口</span>
-          <span>积分扣费 · 失败返还 · 历史可追溯</span>
+        <div class="service-item">
+          <strong>客服可达</strong>
+          <span>微信客服处理充值、发票、企业合作和生成问题。</span>
+        </div>
+        <div class="service-item">
+          <strong>合规运营</strong>
+          <span>上线后补齐隐私协议、用户协议、备案和内容审核。</span>
         </div>
       </section>
 
       <section class="section contact-section" id="contact">
         <div class="contact-copy">
-          <p class="eyebrow">联系合作</p>
-          <h2>杭州特米诺偲人工智能科技有限公司</h2>
-          <p>适合咨询模型能力采购、支付宝接入、网站定制、企业 API 和私有化部署。</p>
+          <p class="eyebrow">联系客服</p>
+          <h2>要成交，就把客服入口放到用户眼前</h2>
+          <p>适合咨询模型能力采购、支付宝接入、网站定制、企业 API、发票和私有化部署。</p>
           <div class="contact-list">
             <a href="mailto:hanfeihu@tminos.com">hanfeihu@tminos.com</a>
             <span>微信：13656670870</span>
+            <span>公司：杭州特米诺偲人工智能科技有限公司</span>
           </div>
         </div>
         <figure class="qr-card">
           <img src="../../../assets/wechat-qr.png" alt="微信二维码" />
-          <figcaption>扫码联系</figcaption>
+          <figcaption>扫码添加微信客服</figcaption>
         </figure>
       </section>
     </main>
 
+    <div class="mobile-cta" aria-label="快捷操作">
+      <a href="#pricing">支付宝充值</a>
+      <a href="#contact">微信客服</a>
+    </div>
+
     <footer class="footer">
       <span>© 2026 杭州特米诺偲人工智能科技有限公司</span>
-      <span>墨元 AI · Moyuan AI · moyuanai.com</span>
+      <span>用户协议 · 隐私政策 · 发票说明 · ICP 备案待填写</span>
     </footer>
   </body>
 </html>
