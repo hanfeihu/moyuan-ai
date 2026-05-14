@@ -30,6 +30,7 @@
 moyuan-ai/
   apps/
     web/              # 前端网站
+      static-prototype/ # 静态产品原型
     api/              # 后端服务
   packages/
     ai-providers/     # OpenAI / 其他图像模型适配
